@@ -26,7 +26,7 @@ DEBIAN="git,python-pip,apache2,dnsmasq,libssl-dev,libnfnetlink-dev,libnl-3-dev,l
 FEDORA="git,python-pip"
 
 # COMMANDS TO RUN AFTER
-AFTER_COMMANDS="cd {INSTALL_LOCATION},pip install -r pip.req,cd hostapd-eaphammer/hostapd,make hostapd-eaphammer_lib"
+AFTER_COMMANDS="cd {INSTALL_LOCATION},python -m pip install -r pip.req,cd hostapd-eaphammer/hostapd,make hostapd-eaphammer_lib"
 
 # THIS WILL CREATE AN AUTOMATIC LAUNCHER FOR THE TOOL
 LAUNCHER="eaphammer"
