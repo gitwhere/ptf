@@ -23,7 +23,7 @@ INSTALL_LOCATION="hashcat"
 DEBIAN="ocl-icd-opencl-dev libgmp3-dev git lzip gcc-multilib make m4 mingw-w64"
 
 # COMMANDS TO RUN AFTER
-AFTER_COMMANDS="cd {INSTALL_LOCATION},make -j4,make install"
+AFTER_COMMANDS="cd {INSTALL_LOCATION},git submodule update --init,make -j4,make install"
 
 
 # DON'T RUN AFTER COMMANDS ON UPDATE
